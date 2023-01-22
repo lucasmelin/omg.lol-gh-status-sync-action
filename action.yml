@@ -1,0 +1,13 @@
+name: "omg.lol GitHub status sync"
+description: "Syncs your omg.lol and GitHub user profile statuses"
+author: "Lucas Melin"
+inputs:
+  omg_lol_user: # change this
+    required: true
+    description: "omg.lol username"
+  github_token:
+    required: true
+    description: "GitHub token with user scope"
+runs:
+  using: "node16"
+  main: "dist/index.js"
