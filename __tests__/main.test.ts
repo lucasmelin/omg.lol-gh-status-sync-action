@@ -1,5 +1,5 @@
-import { fetchStatus } from '../src/fetchStatus'
-import { updateStatus } from '../src/updateStatus'
+import { fetchStatus } from '../src/fetch-status'
+import { updateStatus } from '../src/update-status'
 import * as process from 'process'
 import * as cp from 'child_process'
 import * as path from 'path'
