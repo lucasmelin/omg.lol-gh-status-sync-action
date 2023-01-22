@@ -1,6 +1,10 @@
-import * as github from "@actions/github"
+import * as github from '@actions/github'
 
-export async function updateStatus(token: string, emoji: string, message: string): Promise<void> {
+export async function updateStatus(
+  token: string,
+  emoji: string,
+  message: string
+): Promise<void> {
   const updateStatusMutation = `
     mutation ($emoji: String!, $message: String!) {
         changeUserStatus(input: {emoji: $emoji, message: $message}) {
@@ -14,8 +18,7 @@ export async function updateStatus(token: string, emoji: string, message: string
   const octokit = github.getOctokit(token)
 
   await octokit.graphql(updateStatusMutation, {
-    emoji: emoji,
-    message: message
+    emoji,
+    message
   })
 }
-
