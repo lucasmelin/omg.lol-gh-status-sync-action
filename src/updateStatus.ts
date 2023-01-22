@@ -1,4 +1,3 @@
-import * as core from '@actions/core'
 import * as github from "@actions/github"
 
 export async function updateStatus(token: string, emoji: string, message: string): Promise<void> {

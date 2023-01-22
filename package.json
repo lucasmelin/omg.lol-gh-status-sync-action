@@ -27,7 +27,8 @@
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1",
-    "jest-fetch-mock": "^3.0.3"
+    "jest-fetch-mock": "^3.0.3",
+    "node-fetch": "^3.3.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.0",
