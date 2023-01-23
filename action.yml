@@ -8,6 +8,11 @@ inputs:
   github_token:
     required: true
     description: "GitHub token with user scope"
+outputs:
+  emoji:
+    description: "The emoji used in the status"
+  message:
+    description: "The status message text"
 runs:
   using: "node16"
   main: "dist/index.js"
