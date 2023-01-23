@@ -1,6 +1,9 @@
 name: "omg.lol GitHub status sync"
 description: "Syncs your omg.lol and GitHub user profile statuses"
 author: "Lucas Melin"
+branding:
+  icon: "refresh-ccw"
+  color: "purple"
 inputs:
   omg_lol_user: # change this
     required: true
