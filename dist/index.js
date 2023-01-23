@@ -93,6 +93,8 @@ function run() {
         try {
             const omgLolUser = core.getInput('omg lol user');
             const { emoji, message } = yield (0, fetch_status_1.fetchStatus)(`https://api.omg.lol/address/${omgLolUser}/statuses/latest`);
+            core.setOutput("emoji", emoji);
+            core.setOutput("message", message);
             const userToken = core.getInput('github token');
             yield (0, update_status_1.updateStatus)(userToken, emoji, message);
         }
