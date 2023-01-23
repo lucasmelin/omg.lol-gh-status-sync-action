@@ -2,6 +2,8 @@
 
 <p align="center">
 Sync your <a href="https://omg.lol">omg.lol</a> status to your <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#setting-a-status">GitHub user profile status</a>.
+<br>
+<img src="./assets/statussync.png">
 </p>
 
 ## Inputs
