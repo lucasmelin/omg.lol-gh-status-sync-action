@@ -100,10 +100,7 @@ function run() {
         }
     });
 }
-/* istanbul ignore next */
-if (process.env.CI === 'true') {
-    run();
-}
+run();
 
 
 /***/ }),
